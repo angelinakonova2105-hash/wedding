@@ -353,12 +353,18 @@
     background:var(--cream-deep);
     border:1px solid var(--sage-line);
     border-radius:10px;
-    display:flex; align-items:flex-end; justify-content:center;
+    position:relative;
     overflow:hidden;
     aspect-ratio:3/3.8;
     padding:4px;
   }
-  .dk-cell img{ max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; }
+  .dk-cell img{
+    position:absolute;
+    inset:4px;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+  }
 
   /* =========================================================
      RSVP
